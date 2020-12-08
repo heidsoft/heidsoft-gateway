@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: test
+          uri: https://www.baidu.com
+          predicates:
+            - Path=/
